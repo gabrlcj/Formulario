@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
+    <title>Formulario DEV</title>
+</head>
+<body>
+    <section class="title">
+        <h1>Cadastro de DEVs</h1>
+        <p>Complete suas informações:</p>
+    </section>
+
+    <form>
+        <section class="content">
+            <fieldset>
+                <div class="campo">
+                    <label for="nome"><strong>Nome:</strong></label><br>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome:</strong></label><br>
+                    <input type="text" id="sobrenome" name="sobrenome" required>
+                </div>
+            </fieldset>
+            <div class="campo">
+                <label for="email"><strong>E-mail:</strong></label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+            <div class="campo">
+                <label><strong>De qual lado da aplicação você desenvolve?</strong></label><br>
+                <label>
+                    <input type="radio" name="devweb" value="front-end" checked>Front-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="back-end">Back-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="fullstack">Fullstack
+                </label>
+            </div>
+            <div class="campo">
+                <label for="senioridade"><strong>Senioridade:</strong></label><br>
+                <select name="senioridade" id="senioridade" required>
+                    <option value="">-- Escolha uma opção --</option>
+                    <option value="junior">Júnior</option>
+                    <option value="pleno">Pleno</option>
+                    <option value="senior">Sênior</option>
+                </select>
+            </div>
+
+            <fieldset>
+                <div class="check">
+                    <label><strong>Selecione as tecnologias que utiliza:</strong></label><br>
+                    <input type="checkbox" id="tech1" name="tech1" value="HTML">
+                    <label for="tech1"><i class="devicon-html5-plain-wordmark colored"></i>HTML</label>
+                    <br>
+                    <input type="checkbox" id="tech2" name="tech2" value="CSS">
+                    <label for="tech2"><i class="devicon-css3-plain-wordmark colored"></i>CSS</label>
+                    <br>
+                    <input type="checkbox" id="tech3" name="tech3" value="Javascript">
+                    <label for="tech3"><i class="devicon-javascript-plain colored"></i>Javascript</label>
+                    <br>
+                    <input type="checkbox" id="tech4" name="tech4" value="Angular">
+                    <label for="tech4"><i class="devicon-angularjs-plain colored"></i>Angular</label>
+                    <br>
+                    <input type="checkbox" id="tech5" name="tech5" value="Node.js">
+                    <label for="tech5"><i class="devicon-nodejs-plain colored"></i>Node.js</label>
+                    <br>
+                    <input type="checkbox" id="tech6" name="tech6" value="Python">
+                    <label for="tech6"><i class="devicon-python-plain-wordmark"></i>Python</label>
+                    <br>
+                    <input type="checkbox" id="tech7" name="tech7" value="Flutter">
+                    <label for="tech7"><i class="devicon-flutter-plain colored"></i>Flutter</label>
+                    <br>
+                    <input type="checkbox" id="tech8" name="tech8" value="React">
+                    <label for="tech8"><i class="devicon-react-original-wordmark colored"></i>React</label>
+                </div>
+            </fieldset>
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>Conte um pouco mais da sua experiência:</strong></label><br>
+                <textarea name="experiencia" id="experiencia" cols="40" rows="6"></textarea>
+            </div>
+            <button class="button" type="submit" onsubmit="">Concluído</button>
+        </section>  
+    </form>
+</body>
+</html>
